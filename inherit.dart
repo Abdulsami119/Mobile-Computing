@@ -1,11 +1,9 @@
 import 'dart:io';
 
-class Person {
+abstract class Person {
   String name = "Ali";
 
-  void display() {
-    print("Name: $name");
-  }
+  void display();
 }
 
 class Student extends Person {
@@ -19,7 +17,7 @@ class Student extends Person {
 }
 
 void main() {
-  Student s = Student();
+  Person s = Student();
 
   s.display();
 }

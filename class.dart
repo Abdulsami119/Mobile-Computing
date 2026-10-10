@@ -11,7 +11,7 @@ class Student {
     _department = "CS";
   }
 
-  Student.withDetails(this._name, this._age, this._department);
+  Student.withDetails(this._name, this._age, this._department); // Named constructor
 
   void setName(String name) {
     this._name = name;
@@ -38,7 +38,7 @@ class Student {
 
 void main() {
   Student student = Student();
-
+  Student student2 = Student.withDetails("Ali", 20, "CS");
   print("Name: ${student.getName()}");
   print("Age: ${student.getAge()}");
   print("Department: ${student.getDepartment()}");
